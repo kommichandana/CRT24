@@ -1,0 +1,8 @@
+READ A CODE AND PRINT CHARACTER FOR GIVEN CODE
+#include <stdio.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    printf("%c",(char)a);
+}

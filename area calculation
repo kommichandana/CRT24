@@ -1,0 +1,26 @@
+Input Format:
+First input: a side of a square in integer Second input: length of a rectangle in integer Third input: breadth of a rectangle in integer Fourth input: radius of a circle in float
+Output Format:
+The first output should be the area of a square in integer The second output should be the area of a rectangle in integer The third output should be the area of a circle in float with 2 decimal places
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   int a,b,c;
+    float d;
+    scanf("%d%d%d",&a,&b,&c);
+    scanf("%f",&d);
+    int areaofsqr,areaofrec;
+    float areaofcir;
+    areaofsqr=a*a;
+    printf("%d\n",areaofsqr);
+    areaofrec=b*c;
+    printf("%d\n",areaofrec);
+    areaofcir=3.14*d*d;
+    printf("%.2f",areaofcir);
+    
+    return 0;
+}

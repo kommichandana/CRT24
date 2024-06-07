@@ -1,0 +1,57 @@
+jumping statements:
+1)break:
+it breaks the loop based on specified condition
+ex1: #include <stdio.h>
+
+int main()
+{
+    int i;
+    for(i=1;i<=10;i++)
+    {
+        printf("%d\n",i);
+        if(i==5)//it will break and print upto 5
+        break;
+    }
+
+    return 0;
+}
+ex2:prime code:
+#include <stdio.h>
+
+int main()
+{
+    int i,n,c=0;
+    scanf("%d",&n);
+    for(i=2;i<n;i++)
+    {
+       if(n%i==0)
+       {
+           c=1;
+           break;
+       }
+    }
+        if(c==0 && n!=1)
+        
+            printf("prime");
+        else
+        
+            printf("not prime");
+    
+
+    return 0;
+}
+ex3:
+read integer elements upto -1
+program:
+int main()
+{
+int a,i;
+while(1)//for(;;)
+{
+scanf("%d",&a);
+if(a==-1)
+break;
+}
+}
+continue:it continues the loop and skips the remaining part of the loop
+
